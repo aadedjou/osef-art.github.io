@@ -1,0 +1,10 @@
+Control panel username:   mipc_28147341
+Control panel password:   **********
+Control panel URL:  cpanel.mipropia.com
+MySQL username  mipc_28147341
+MySQL password:   **********
+MySQL hostname:   sql211.mipropia.com
+FTP username:   mipc_28147341
+FTP password:   **********
+FTP host name:  ftp.mipropia.com
+Your Website URL:   http://osef.mipropia.com
