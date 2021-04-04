@@ -1,0 +1,78 @@
+@import "global";
+
+//// BOTTOM PANEL
+$link-size: 40px;
+
+#footer {
+    @extend .line;
+    display: block;
+    background-color: rgb(52.5, 50, 57.5);
+    bottom: 0;
+    padding: 10px 0px;
+
+    div {
+        // @extend .border;
+        padding: 0px 5px;
+    }
+    
+    .link-box {
+        width: $link-size + 10px;
+        height: $link-size + 10px;
+        margin: 0px 2.5px;
+
+        .link {
+            height: $link-size;
+            cursor: pointer;
+            transition: ease-out 0.2s;
+            margin: 2.5px;
+
+            &:hover {
+                margin: 0px;
+                height: $link-size + 5px;
+            }
+        }
+    }
+
+
+    #signature {
+        @extend %gotham;
+        font-size: 14pt;
+        color: rgb(152.5, 150, 160);
+        text-shadow: 0px -2px rgba(0, 0, 0, 0.75);
+        transition: 0.3s;
+
+        &:hover {
+            color: rgb(200, 200, 210);
+        }
+    } 
+
+    #copyright {
+        @extend .thin;
+    }
+}
+
+#copytip {
+    visibility: hidden;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border-radius: 7.5px;
+    padding: 5px 10px;
+    transition: .25s;
+
+    /* Position the tooltip */
+    position: fixed;
+    bottom: 0;
+    margin-left: $logo-size + 10px;
+}
+
+#discord-link:hover ~ #copytip {
+    visibility: visible;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    bottom: $logo-size + 10px;
+}
+
+#discord-id {
+    display: none;
+}

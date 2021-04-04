@@ -1,0 +1,82 @@
+@import "global";
+
+svg { 
+    position: absolute;
+    margin: 0 auto; 
+    overflow: hidden;
+    z-index: 0;
+}
+
+.wave {
+    margin: 32pt 0 0 225px;
+}
+
+.wheel {
+    margin-left: 110px;
+}
+  
+#wave {
+    stroke-dasharray: 0 16 101 16;
+    animation: moveTheWave 5000ms linear infinite;  
+}
+
+@keyframes moveTheWave {
+    0% { 
+        stroke-dashoffset: 0; 
+        transform: translate3d(0, 0, 0);
+    }
+    100% { 
+        stroke-dashoffset: -133;
+        transform: translate3d(-90px, 0, 0);
+    }
+}
+
+.new-stamp {
+    @extend .flex;
+    @extend %gotham;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    position: absolute; 
+    margin: -10px 0 0 -50px;
+
+    .spin {
+        position: absolute;
+        background-color: $games-color;
+        height: 40px;
+        width: 40px;
+        animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .spin2 {
+        @extend .spin;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); 
+        
+        animation-name: spin2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    span {
+        position: absolute;
+        vertical-align: middle;
+        z-index: 2;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg);   }
+        to {   transform: rotate(360deg); }
+    }
+    @keyframes spin2 {
+        from { transform: rotate(45deg);   }
+        to {   transform: rotate(405deg); }
+    }
+}
+
+

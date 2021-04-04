@@ -8,3 +8,7 @@ FTP username:   mipc_28147341
 FTP password:   **********
 FTP host name:  ftp.mipropia.com
 Your Website URL:   http://osef.mipropia.com
+
+ftp.mipropia.com
+mipc_28147341
+FTP password:   **********
