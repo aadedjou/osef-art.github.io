@@ -6,17 +6,13 @@
 
 <body>        
     <div id="top-panel">
-        <div id="icon-container-art">
-            <a href="artwork.php">
-                <img src="assets/icons/art-icon.png" class="icon">
-            </a>
-        </div>
+        <a href="artwork.php" id="icon-container-art">            
+            <img src="assets/icons/art-icon.png" class="icon">
+        </a>
 
-        <div id="icon-container-games">
-            <a href="games.php">
-                <img src="assets/icons/games-icon.png" class="icon">
-            </a>
-        </div>
+        <a href="games.php" id="icon-container-games">            
+            <img src="assets/icons/games-icon.png" class="icon">
+        </a>
 
         <div class="spacer"></div>
 
@@ -29,17 +25,13 @@
 
         <div class="spacer"></div>
         
-        <div id="icon-container-anims">
-            <a href="anims.php">
-                <img src="assets/icons/anims-icon.png" class="icon">
-            </a>
-        </div>
+        <a href="anims.php" id="icon-container-anims">            
+            <img src="assets/icons/anims-icon.png" class="icon">
+        </a>
             
-        <div id="icon-container-music">
-            <a href="music.php">
-                <img src="assets/icons/music-icon.png" class="icon">
-            </a>
-        </div>
+        <a href="music.php" id="icon-container-music">            
+            <img src="assets/icons/music-icon.png" class="icon">
+        </a>
 
         <div id="sub-panel">
             <div id="label-container-art">    ART </div>
@@ -48,5 +40,5 @@
             <div id="label-container-anims"> ANIMS </div>
             <div id="label-container-music"> MUSIC </div>
         </div>
-    </div>
+    </div> 
 </body>

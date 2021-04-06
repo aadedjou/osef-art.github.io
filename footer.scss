@@ -11,7 +11,6 @@ $link-size: 40px;
     padding: 10px 0px;
 
     div {
-        // @extend .border;
         padding: 0px 5px;
     }
     
@@ -20,7 +19,7 @@ $link-size: 40px;
         height: $link-size + 10px;
         margin: 0px 2.5px;
 
-        .link {
+        img {
             height: $link-size;
             cursor: pointer;
             transition: ease-out 0.2s;
@@ -31,8 +30,12 @@ $link-size: 40px;
                 height: $link-size + 5px;
             }
         }
-    }
 
+        a:focus img {
+            margin: 0px;
+            height: $link-size + 5px;
+        }
+    }
 
     #signature {
         @extend %gotham;
@@ -63,14 +66,14 @@ $link-size: 40px;
     /* Position the tooltip */
     position: fixed;
     bottom: 0;
-    margin-left: $logo-size + 10px;
+    margin-left: $link-size + 10px;
 }
 
 #discord-link:hover ~ #copytip {
     visibility: visible;
     color: white;
-    background-color: rgba(0, 0, 0, 0.25);
-    bottom: $logo-size + 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: $link-size + 10px;
 }
 
 #discord-id {

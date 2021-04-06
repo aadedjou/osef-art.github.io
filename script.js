@@ -90,7 +90,7 @@ function resetTip(that) {
 
 function recolorDot(page) {
     var dot = document.getElementById("dot");
-    dot.classList = ['dot-' + page];
+    dot.id = 'dot-' + page;
 }
 
 function getRandomInt(max) {
@@ -156,4 +156,13 @@ function slide(id, timeOnSlide, timeBetweenSlides) {
         css.innerHTML += "#" + id + " { left: 0%; " + keyframeprefix + "transform: translate3d(0,0,0); " + keyframeprefix + "animation: " + totalTime + "s " + id + " infinite; }\n"; // call on the completed keyframe animation sequence
         document.body.appendChild(css); // add the new stylesheet to the end of the document
     }
+}
+
+function readMore(id) {
+    var text = document.getElementById(id + '-text'); 
+    text.classList = "";
+
+    var rm = document.getElementById(id + '-rm'); 
+    rm.innerHTML = "";
+
 }

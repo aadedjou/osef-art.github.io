@@ -1,81 +1,18 @@
 @import "global";
 @import "top-panel";
 
-//// TITLE
-.title-box {
-    @extend .line;
-    @extend %lufga;
-    height: 48pt;
-    margin-top: $top-panel-height + 10px;
-    padding-left: 5%;
-
-    &:hover .title-shadow-home {
-        background: -webkit-linear-gradient(left, rgb(175, 125, 250), rgb(250, 85, 160));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        margin: 7.5px 0px 0px -5px;
-    }
+.art-shadow {
+    text-shadow: -2.5px 2.5px $art-color;
 }
 
-.title {
-    position: absolute;
-    font-size: 48pt;
-    z-index: 1;
+.games-shadow {
+    text-shadow: -2.5px 2.5px $games-color;
 }
-
-%title-shadow {
-    @extend .title;
-    margin: 5px 0px 0px -2.5px;
-}
-
-.title-shadow-home {
-    @extend %title-shadow;
-    background: -webkit-linear-gradient(left, rgb(160, 160, 175), rgb(175, 125, 250));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    transition: ease-out 0.5s;
-}
-
-.title-shadow-art {
-    @extend %title-shadow;
-    background: -webkit-linear-gradient(left, $art-color-50, $art-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.title-shadow-games {
-    @extend %title-shadow;
-    background: -webkit-linear-gradient(left, $games-color-50, $games-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.title-shadow-anims {
-    @extend %title-shadow;
-    background: -webkit-linear-gradient(left, $anims-color-50, $anims-color-75);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.title-shadow-music {
-    @extend %title-shadow;
-    background: -webkit-linear-gradient(left, $music-color-50, $music-color-75);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-
 
 // content
 
 .articles-container {
-  max-width: 900px;
+    max-width: 900px;
 }
 
 h2 {
@@ -97,74 +34,62 @@ p {
     }
 }
 
-.art-shadow {
-    text-shadow: -2.5px 2.5px $art-color;
-}
-
-.games-shadow {
-    text-shadow: -2.5px 2.5px $games-color;
-}
-
-.feat-shadow {
-    text-shadow: -2.5px 2.5px $feat-color-accent;
-}
-
-.text-content {
+#intro {
     text-align: justify;
-    font-size: 16pt;
-    width: 80%;
+    width: 70%;
+
+    p {
+        font-size: 18pt;
+    }
 
     %white {
         color: white;
     }
 
-    %shodowed {
+    %shadowed {
         @extend %white;
         @extend %lufga;
 
         display: inline-block;
+        transition: .15s;
+
+        &:hover, &:focus {
+            transform: translate(2px, -2px);
+        }
     }
 
     .art-link {
-        @extend %shodowed;
+        @extend %shadowed;
         text-shadow: -1.25px 1.25px $art-color-50;
-        transition: 0.2s;
 
-        &:hover {
-            transform: translate(2px, -2px);
+        &:hover, &:focus {
             text-shadow: -1.5px 1.5px $art-color-75;
         }
     }
 
     .games-link {
-        @extend %shodowed;
+        @extend %shadowed;
         text-shadow: -1.25px 1.25px $games-color-50;
-        transition: 0.2s;
 
-        &:hover {
-            transform: translate(2px, -2px); 
+        &:hover, &:focus {
             text-shadow: -1.5px 1.5px $games-color-75;
         }
     }
 
     .anims-link {
-        @extend %shodowed;
+        @extend %shadowed;
         text-shadow: -1.25px 1.25px $anims-color-50;
-        transition: 0.2s;
 
-        &:hover {
-            transform: translate(2px, -2px);
+        &:hover, &:focus {
             text-shadow: -1.5px 1.5px $anims-color-75;
         }
     }
 
     .music-link {
-        @extend %shodowed;
+        @extend %shadowed;
         text-shadow: -1.25px 1.25px $music-color-50;
-        transition: 0.2s;
 
-        &:hover {
-            transform: translate(2px, -2px);
+        &:hover, &:focus {
             text-shadow: -1.5px 1.5px $music-color-75;
         }
     }
@@ -177,7 +102,11 @@ p {
     
     margin: 10px 0;
     padding: 10px;
-    transition: 0.5s;
+    transition: .5s;
+
+    br {
+        margin: 15px 0;
+    }
 
     h2 .shadow {
         color: white;
@@ -255,9 +184,10 @@ p {
                         width: 47.5px;    
                     }
                 }
-                
-                &:hover {
-                    color: $feat-color-accent;
+
+                a:focus img {
+                    margin: 2.5px 0;
+                    width: 47.5px;    
                 }
             }
         }        
@@ -282,22 +212,38 @@ p {
     }
 
     .read-more {
+        @extend .flex;
         @extend %light;
-        text-transform: uppercase;
-        text-align: center;
-        transition: .5s;
+        margin: 15px auto;
 
-        &:hover {
-            color: white;
-            letter-spacing: 2px;
-            cursor: pointer;
-            transition: 1s;
+        span {
+            text-transform: uppercase;
+            text-align: center;
+            transition: .5s;
+
+            &:hover {
+                color: white;
+                padding: 0 25px;
+                letter-spacing: 2px;
+                cursor: pointer;
+                transition: 1s;
+            }
+        } 
+
+        .spacer {
+            padding: 0 25px;
+
+            .stroke {
+                height: 50%; 
+                border-bottom: solid white 1px;
+            }
         }
     }
 
     .thumbnail {
         width: 100%;
         border-radius: 5px;
+        margin: 15px 0;
     }
 
     .article-content {
@@ -307,6 +253,14 @@ p {
 
 .game-article {
     @extend %article;
+
+    p a {
+        transition: .5s;
+
+        &:hover, &:focus {
+            color: $games-color;
+        }
+    }
 
     .shadow {
         @extend .games-shadow;
@@ -389,6 +343,18 @@ $btn-size: 50px;
 
         img {
             height: 40%;
+        }
+    }
+}
+
+a:focus {
+    %button {
+        span {
+            margin-left : $btn-size;
+        }
+
+        .inner-btn{
+            left: 0;
         }
     }
 }

@@ -53,10 +53,6 @@ body {
     background: radial-gradient(rgb(10, 10, 12.5), rgb(42.5, 40, 42.5))  ;
 }
 
-br {
-    margin: 15px 0;
-}
-
 a {
     text-decoration: none;
 }
@@ -76,6 +72,9 @@ div {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.hidden {
+    display: none;
 }
 
 

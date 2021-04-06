@@ -1,0 +1,73 @@
+.title-box {
+    @extend .line;
+    @extend %lufga;
+    height: 48pt;
+    margin-top: $top-panel-height + 10px;
+    padding-left: 5%;
+
+    &:hover .title-shadow-home {
+        background: -webkit-linear-gradient(left, rgb(175, 125, 250), rgb(250, 85, 160));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin: 7.5px 0px 0px -5px;
+    }
+
+    .dotted {
+        border-top: dashed rgba(230, 230, 255, 0.4) 2.5px; 
+        border-left: dashed rgba(230, 230, 255, 0.4) 2.5px; 
+        position: absolute; 
+    }
+}
+
+.title {
+    position: absolute;
+    font-size: 48pt;
+    z-index: 1;
+}
+
+%title-shadow {
+    @extend .title;
+    margin: 5px 0px 0px -2.5px;
+}
+
+.title-shadow-home {
+    @extend %title-shadow;
+    background: -webkit-linear-gradient(left, rgb(160, 160, 175), rgb(175, 125, 250));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: ease-out 0.5s;
+}
+
+.title-shadow-art {
+    @extend %title-shadow;
+    background: -webkit-linear-gradient(left, $art-color-50, $art-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title-shadow-games {
+    @extend %title-shadow;
+    background: -webkit-linear-gradient(left, $games-color-50, $games-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title-shadow-anims {
+    @extend %title-shadow;
+    background: -webkit-linear-gradient(left, $anims-color-50, $anims-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title-shadow-music {
+    @extend %title-shadow;
+    background: -webkit-linear-gradient(left, $music-color-50, $music-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
