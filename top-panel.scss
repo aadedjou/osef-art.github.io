@@ -15,12 +15,16 @@ $top-panel-height: 85px;
     z-index: 10;   
     height: $top-panel-height;
     
+    background: radial-gradient(
+        rgb(72.5, 70, 80),
+        rgb(62.5, 60, 67.5)
+    );
     background-color: rgb(62.5, 60, 67.5);
     border-bottom: solid rgb(52.5, 50, 57.5) 7.5px; 
 
-    a:focus #logo-container {
+    a:focus #logo-container, #logo-container:hover {
         #osef, #dot {
-            letter-spacing: 5px;
+            letter-spacing: 7.5px;
         }   
     }
 
@@ -30,13 +34,7 @@ $top-panel-height: 85px;
         transition: 0.2s;
 
         #osef, #dot {
-            transition: 0.6s;
-        }
-
-        &:hover {
-            #osef, #dot {
-                letter-spacing: 5px;
-            }
+            transition: 1.2s;
         }
     }
 

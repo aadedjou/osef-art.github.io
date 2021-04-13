@@ -1,0 +1,147 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="icon"       type="image/png" href="assets/favicons/fav_home.png"/>
+    <script src="script.js"></script>    
+</head>  
+
+<body>        
+    <div id="top-panel">
+        <a href="artwork.php" id="icon-container-art">            
+            <img src="assets/icons/art-icon.png" class="icon">
+        </a>
+
+        <a href="games.php" id="icon-container-games">            
+            <img src="assets/icons/games-icon.png" class="icon">
+        </a>
+
+        <div class="spacer"></div>
+
+        <a href="home.php">
+            <div id="logo-container">    
+                <div><h1 id="osef">osef</h1></div>
+                <div><h1 id="dot">.</h1></div>
+            </div>
+        </a>
+
+        <div class="spacer"></div>
+        
+        <a href="anims.php" id="icon-container-anims">            
+            <img src="assets/icons/anims-icon.png" class="icon">
+        </a>
+            
+        <a href="music.php" id="icon-container-music">            
+            <img src="assets/icons/music-icon.png" class="icon">
+        </a>
+
+        <div id="sub-panel">
+            <div id="label-container-art">    ART </div>
+            <div id="label-container-games"> GAMES </div>
+            <div class="spacer"> </div>
+            <div id="label-container-anims"> ANIMS </div> 
+            <div id="label-container-music"> MUSIC </div>
+        </div>
+    </div> 
+
+    <div class="title-box">
+        <span class="title-shadow-about">who am I ?</span>
+        <div>
+            <span class="title">who am I ?</span>
+        </div>
+        <div id="dashed-1"></div>
+        <div id="dashed-2"></div>
+        <div id="dashed-3"></div>
+        <div id="dashed-4"></div>
+
+        <svg class="wave"
+            xmlns="http://www.w3.org/2000/svg"
+            width="80px" height="60px" viewBox="10 0 65 60">
+            
+            <path id="wave"
+                    fill="none"
+                    stroke="rgba(245, 235, 255, 0.25)"
+                    stroke-linecap="round"
+                    stroke-width="7">
+                <script>
+                    buildWave(60, 60);
+                </script>
+            </path>
+        </svg>
+    </div>
+
+    <div class="flex">
+        <div class="spacer"></div>
+        
+        <div id="intro">
+            <img src="assets/thumbnails/look.png" width="100%">
+
+            <p>
+                Hi there ! I'm really glad you reached my portfolio/website. <br>
+                My name is Adam, I'm 20 and really into multimedia/developping. <br> <br>
+                I've been drawing since I'm a kid, mostly stickmen and cartoonish characters.
+                I was so into my universe that I made cartoons of my characters, with a lore
+                and a bunch of adventures. <br>
+                When I was in school, I was sharing my creations with a few friends who had quite
+                similar interests. One of them made me discovered a site named stickpage.com, and
+                I was stunned seeing a lot of people, like me, liked to share their nerdy universe
+                with animations and games. I would spend hours discovering new animations, new animators
+                and new universes. <br>
+                Around 2013, I accidently downloaded on the Play Store a stickman-animating app,
+                that I enjoyed and adopted really quickly. At first I only shared my creations with
+                my friends, but after a few months I decided to put my work on a YouTube channel. <br>
+                I was awful at this, but I met a real lot of people that supported me and liked
+                my universe. This really really helped me improve over the years, making me discover
+                new softwares, new techniques and an amazing community. <br><br>
+                Around my entrance in college, I had to put a huge pause in animating to focus on my
+                studies. Plus, the lack of material (graphic tablet, decent computer) was blocking me 
+                in my improvement. <br>
+                But hopefully, I started computer engeneering studies that taught me web designing,
+                and software developping. With my skills in animating and my knowledge in Java, C++,
+                etc. I've developped on my own a bunch of little games I've always dreamt about. <br>
+
+                One of my biggest wishes is that my creations reach the most people possible. I want
+                my stuff to inspire people like other animators inspired me by the past.
+                If my style and universe can be recognized among other creations, I would consider
+                my goal acomplished. :D
+
+            </p>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="title-box">
+        <span class="title-shadow-about">what do I use ?</span>
+        <div>
+            <span class="title">what do I use ?</span>
+        </div>
+    </div>
+    
+</body>
+
+<p id="discord-id">osef#7387</p>
+
+<footer id ="footer">
+    <div class="line flex">
+        <div class="spacer"></div>
+        <div class="link-box">
+            <a href="https://github.com/aadedjou" target="blank">
+                <img src="http://thomas-blondel.fr/img/github-logo.png">
+            </a>
+        </div>
+        <div class="link-box" onclick="copy(this)" onmouseout="resetTip(this)">
+            <a>
+                <img id="discord-link" src="https://magenoir.com/img/mage-noir/pictograms/discord-white-icon-13.jpg">
+                <span id="copytip"> Coming soon! <br> <span class="thin">(click to <b>copy</b> my id)</span> </span>
+            </a>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="line flex">
+        <div class="spacer"></div>
+            <span id="signature">
+                osef. <span id="copyright">© 2021</span> 
+            </span>
+        <div class="spacer"></div>
+    </div>        
+</footer>

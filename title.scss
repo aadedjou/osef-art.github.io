@@ -13,10 +13,38 @@
         margin: 7.5px 0px 0px -5px;
     }
 
-    .dotted {
+    %dashed-line {
         border-top: dashed rgba(230, 230, 255, 0.4) 2.5px; 
         border-left: dashed rgba(230, 230, 255, 0.4) 2.5px; 
         position: absolute; 
+    }
+
+    #dashed-1 {
+        @extend %dashed-line;
+        width: 40px;
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+
+    #dashed-2 {
+        @extend %dashed-line;
+        width: 130px;
+        margin-top: 75px;
+        margin-left: -25px;
+    }
+
+    #dashed-3 {
+        @extend %dashed-line;
+        height: 85px;
+        margin-top: 5px;
+        margin-left: -10px;
+    }
+
+    #dashed-4 {
+        @extend %dashed-line;
+        height: 60px;
+        margin-top: 55px;
+        margin-left: 55px;
     }
 }
 
@@ -34,6 +62,15 @@
 .title-shadow-home {
     @extend %title-shadow;
     background: -webkit-linear-gradient(left, rgb(160, 160, 175), rgb(175, 125, 250));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: ease-out 0.5s;
+}
+
+.title-shadow-about {
+    @extend %title-shadow;
+    background: -webkit-linear-gradient(left, rgb(250, 85, 160), rgb(175, 125, 250));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

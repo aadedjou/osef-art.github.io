@@ -164,5 +164,9 @@ function readMore(id) {
 
     var rm = document.getElementById(id + '-rm'); 
     rm.innerHTML = "";
+}
 
+function hideBitmoji() {
+    var bmj = document.getElementById("bitmosef-container");
+    bmj.classList += " hidden";
 }

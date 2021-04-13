@@ -2,8 +2,8 @@
 
 svg { 
     position: absolute;
-    margin: 0 auto; 
     overflow: hidden;
+    margin: 0 auto; 
     z-index: 0;
 }
 
@@ -17,10 +17,10 @@ svg {
   
 #wave {
     stroke-dasharray: 0 16 101 16;
-    animation: moveTheWave 5000ms linear infinite;  
+    animation: move-the-wave 5000ms linear infinite;  
 }
 
-@keyframes moveTheWave {
+@keyframes move-the-wave {
     0% { 
         stroke-dashoffset: 0; 
         transform: translate3d(0, 0, 0);
@@ -34,10 +34,11 @@ svg {
 .new-stamp {
     @extend .flex;
     @extend %gotham;
+
     align-items: center;
     justify-content: center;
-    height: 40px;
     width: 40px;
+    height: 40px;
     position: absolute; 
     margin: 10px 0 0 -40px;
 
@@ -70,13 +71,302 @@ svg {
     }
 
     @keyframes spin {
-        from { transform: rotate(0deg);   }
-        to {   transform: rotate(360deg); }
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
     }
+
     @keyframes spin2 {
-        from { transform: rotate(45deg);   }
-        to {   transform: rotate(405deg); }
+        from { transform: rotate(45deg); }
+        to   { transform: rotate(405deg); }
     }
 }
 
+.press {
+    animation: press-wiggle 0.5s ease; 
+    animation-fill-mode: forwards; 
+}
 
+@keyframes press-wiggle {
+    0% { 
+        margin: 0 0 20px 0;
+        opacity: 0.5;
+    }
+    20% { 
+        margin: 30px 0 5px 0;
+        opacity: 1;
+    }
+    60% { 
+        margin: 15px 0 5px 0;
+        opacity: 1;
+    }
+    100% { 
+        margin: 20px 0 5px 0;
+        opacity: 1;
+    }
+}
+
+#bitmosef-container {
+    position: fixed;
+    height: 128px;
+    width: 128px;
+
+    transform: rotate(90deg) scale(0.5) translate(0, 50%);
+    z-index: 10;
+    transition: .3s;
+
+    div .shadow {
+        position: absolute;
+        height: 128px;
+        width: 128px;
+        background: radial-gradient(
+            rgba(0, 0, 0, 1), 
+            rgba(0, 0, 0, .7), 
+            rgba(0, 0, 0, .3), 
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 0, 0)
+        );
+        transform: scale(1.3);
+    }
+        
+    %bitmosef {
+        position: absolute;
+    }
+
+    %bitmosef-hand {
+        @extend %bitmosef;
+        width: 40%;
+        background: radial-gradient(
+            rgba(0, 0, 0, 0.2), 
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 0, 0)
+        );
+    }
+
+    #bitmosef-head, .shadow {
+        @extend %bitmosef;
+        margin: 70% 0 0 0;
+    }
+
+    #bitmosef-glasses {
+        @extend %bitmosef;
+        margin: 80% 0 0 0;
+    }
+
+    #bitmosef-hand-l {
+        @extend %bitmosef-hand;
+        margin: 100% 0 0 -30%;
+    }
+
+    #bitmosef-hand-r {
+        @extend %bitmosef-hand;
+        margin: 100% 0 0 90%;
+    }
+
+    #bitmosef-bubble {
+        transform: rotate(-90deg) translate(64px, -128px) scale(0.8);
+    }
+        
+    #bitmosef-hide {
+        transform: rotate(-90deg) translate(96px, 64px) scale(1.5);
+    }
+
+    @keyframes head-pop {
+        10% {
+            margin: 75% 0 0 0;
+        } 
+        20% { 
+            margin: 70% 0 0 0;
+        }
+        40% { 
+            margin: -20% 0 0 0;
+        }
+        70% { 
+            margin: 10% 0 0 0;
+        }
+        100% { 
+            margin: 0 0 0 0;
+        }
+    }
+
+    @keyframes glasses-pop {
+        20% { 
+            margin: 80% 0 0 0;
+        }
+        40% { 
+            margin: -15% 0 0 0;
+        }
+        70% { 
+            margin: 7.5% 0 0 0;
+        }
+        100% { 
+            margin: 0 0 0 0;
+        }
+    }
+
+    @keyframes handl-pop {
+        0% { 
+            margin: 100% 0 0 -30%;
+        }
+        15% { 
+            margin: 50% 0 0 -30%;
+        }
+        30% { 
+            margin: 60% 0 0 -30%;
+        }
+        100% { 
+            margin: 60% 0 0 -30%;
+        }
+    }
+
+    @keyframes handr-pop {
+        0% { 
+            margin: 100% 0 0 90%;
+        }
+        15% { 
+            margin: 50% 0 0 90%;
+        }
+        30% { 
+            margin: 60% 0 0 90%;
+        }
+        100% { 
+            margin: 60% 0 0 90%;
+        }
+    }
+
+    &:hover {
+        #bitmosef-head, .shadow {
+            animation: head-pop 1.2s ease; 
+            animation-fill-mode: forwards; 
+        }
+        #bitmosef-glasses {
+            animation: glasses-pop 1.4s ease; 
+            animation-fill-mode: forwards; 
+        }
+        #bitmosef-hand-l {
+            animation: handl-pop 1.4s ease; 
+            animation-fill-mode: forwards; 
+        }
+        #bitmosef-hand-r {
+            animation: handr-pop 1.4s ease; 
+            animation-fill-mode: forwards; 
+        }
+
+        #bubble-container {
+            animation: bubble-raise 0.6s ease; 
+            animation-fill-mode: forwards; 
+            animation-delay: .6s;
+        }
+
+        #hide-button {
+            animation: hide-raise 0.6s ease; 
+            animation-fill-mode: forwards; 
+            animation-delay: .3s;
+        }
+    }
+}
+
+#bubble-container {
+    position: absolute;
+    text-align: center;
+    display: table;
+    
+    transform-origin: bottom left;    
+    opacity: 0;
+
+    div {
+        @extend .flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        font-size: 32pt;
+
+        color: rgb(90, 85, 100);
+        text-shadow: 3px 3px rgba(200, 175, 225, 0.5);
+    }
+
+    @keyframes bubble-raise {
+        0% { 
+            margin-top: 40px;
+            transform: rotate(75deg);
+            opacity: 0;
+        }
+        55% { 
+            margin-top: -10px;
+            transform: rotate(-10deg);
+            opacity: 1;
+        }
+        100% { 
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+    }
+}
+
+#hide-button {
+    @extend .flex;
+    $btn-size: 20px;
+    
+    height: $btn-size;
+    opacity: 0;
+
+    #close-button {
+        @extend .flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: $btn-size;
+        border-radius: 50%;
+        background-color: rgba(250, 50, 100, 0.5);
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.35);
+        
+        cursor: pointer;
+        z-index: 2;
+        transition: .4s;
+   
+        img {
+            height: 60%;
+        }
+
+        &:hover {
+            transform: scale(1.25);
+            background-color: rgba(250, 50, 100, 1);
+        }
+
+        &:hover ~ span {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+
+    span {
+        color: white;
+        text-shadow: 0 2.5px rgba(0, 0, 0, 0.25);
+        font-size: $btn-size;
+        margin: -$btn-size / 10 0 0 $btn-size / 4;
+        transform: translate(-100%);
+        z-index: 1;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    @keyframes hide-raise {
+        0% { 
+            opacity: 0;
+            transform: translate(-100%);
+        }
+        60% { 
+            opacity: 1;
+            transform: translate(5%);
+        }
+        100% { 
+            opacity: 1;
+            transform: translate(0%);
+        }
+    }
+}

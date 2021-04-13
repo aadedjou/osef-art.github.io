@@ -1,3 +1,4 @@
+@import "anims";
 @import "global";
 @import "top-panel";
 
@@ -17,6 +18,7 @@
 
 h2 {
     @extend %greycliff;
+    text-transform: lowercase;
     margin: 0;
     font-size: 28pt;
     text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
@@ -95,13 +97,23 @@ p {
     }
 }
 
+.panel-line {
+    @extend .flex;
+    @extend .line;
+    margin: 10px 0;
+
+    .vertical-spacer {
+        min-width: 20px;
+    }
+}
+
 %panel {
-    text-align: center;
     display: inline-block;
+    text-align: center;
     background-color: rgba(235, 235, 255, 0.3);
     
     margin: 10px 0;
-    padding: 10px;
+    padding: 10px 20px;
     transition: .5s;
 
     br {
@@ -215,6 +227,7 @@ p {
         @extend .flex;
         @extend %light;
         margin: 15px auto;
+        color: rgba(255, 255, 255, 0.5);
 
         span {
             text-transform: uppercase;
@@ -235,12 +248,12 @@ p {
 
             .stroke {
                 height: 50%; 
-                border-bottom: solid white 1px;
+                border-bottom: solid rgba(255, 255, 255, 0.6) 1px;
             }
         }
     }
 
-    .thumbnail {
+    .thumbnail, .thumbnail img {
         width: 100%;
         border-radius: 5px;
         margin: 15px 0;
@@ -295,6 +308,49 @@ p {
     }
 }
 
+#graphism-panel {
+    @extend .art-panel;
+    min-width: 60%; 
+    width: 60%;
+}
+
+.tip {
+    @extend %panel;
+    border-radius: 7.5px;
+    border: dashed 5px rgb(50, 250, 225);
+    background: repeating-linear-gradient(
+        -60deg,
+        rgba(0, 65, 65, 1),
+        rgba(0, 65, 65, 1) 20px,
+        rgba(0, 100, 100, 1) 20px,
+        rgba(0, 100, 100, 1) 40px
+    );
+
+    p {
+        font-size: 12pt;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 0 2px rgba(0, 0, 0, 0.5);
+    }
+
+    tt {
+        font-weight: bold;
+        font-variant: small-caps;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        padding: 0 5px;
+        text-shadow: none;
+    }
+
+    img {
+        opacity: 0.5;
+        margin: 0 0 20px 0;
+    }
+
+    &:hover img {
+        @extend .press;
+    }
+}
 
 $btn-size: 50px;
 
@@ -380,13 +436,23 @@ a:focus {
 %carousel {
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
+
+
+    figure {
+        height: inherit;
+    
+        img {
+            height: inherit;
+            object-fit: cover
+        }
+    }
 }
 
 #art-carousel {
     @extend %carousel;
-    height: 150px;
-    width: 250px;
+    width: 100%;
+    height: 250px;
 }
 
 #ministick-carousel {
