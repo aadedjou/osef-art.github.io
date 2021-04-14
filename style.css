@@ -30,7 +30,7 @@
   font-family: "Lufga";
   src: url("assets/fonts/LufgaBold.otf") format("opentype");
 }
-#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, p, .new-stamp, body {
+#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, #bio .intro, p, .new-stamp, body {
   font-family: "Gotham", sans-serif;
 }
 
@@ -38,7 +38,7 @@
   font-family: "Comfortaa", sans-serif;
 }
 
-h2, #caution h3 {
+#bio p, h2, #caution h3 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -385,7 +385,7 @@ div {
   font-family: "Lufga";
   src: url("assets/fonts/LufgaBold.otf") format("opentype");
 }
-#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, p, .new-stamp, body {
+#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, #bio .intro, p, .new-stamp, body {
   font-family: "Gotham", sans-serif;
 }
 
@@ -393,7 +393,7 @@ div {
   font-family: "Comfortaa", sans-serif;
 }
 
-h2, #caution h3 {
+#bio p, h2, #caution h3 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -822,7 +822,7 @@ svg {
   font-family: "Lufga";
   src: url("assets/fonts/LufgaBold.otf") format("opentype");
 }
-#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, p, body, .new-stamp {
+#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, #bio .intro, p, body, .new-stamp {
   font-family: "Gotham", sans-serif;
 }
 
@@ -830,7 +830,7 @@ svg {
   font-family: "Comfortaa", sans-serif;
 }
 
-h2, #caution h3 {
+#bio p, h2, #caution h3 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -944,7 +944,7 @@ div {
   font-family: "Lufga";
   src: url("assets/fonts/LufgaBold.otf") format("opentype");
 }
-#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, p, body, .new-stamp {
+#footer #signature, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, #bio .intro, p, body, .new-stamp {
   font-family: "Gotham", sans-serif;
 }
 
@@ -952,7 +952,7 @@ div {
   font-family: "Comfortaa", sans-serif;
 }
 
-h2, #caution h3 {
+#bio p, h2, #caution h3 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -1215,6 +1215,42 @@ p .bright {
   color: white;
 }
 
+#bio {
+  text-align: justify;
+  width: 70%;
+}
+#bio p {
+  color: #d7d7e6;
+  font-size: 12pt;
+}
+#bio p .link {
+  color: white;
+  text-decoration: underline;
+}
+#bio p .link img {
+  height: 12pt;
+  transform: translate(0, 2.5pt);
+  margin-right: 2pt;
+}
+#bio p .youtube {
+  text-shadow: 1pt 1pt red;
+}
+#bio p .stickpage {
+  text-shadow: 1pt 1pt #64646e;
+}
+#bio p .stick-fighter {
+  text-shadow: 1pt 1pt blue;
+}
+#bio .intro {
+  font-size: 14pt;
+}
+#bio .left {
+  transform: translate(-5%);
+}
+#bio .right {
+  transform: translate(5%);
+}
+
 #intro {
   text-align: justify;
   width: 70%;
@@ -1224,8 +1260,6 @@ p .bright {
 }
 #intro .music-link, #intro .anims-link, #intro .games-link, #intro .art-link {
   color: white;
-}
-#intro .music-link, #intro .anims-link, #intro .games-link, #intro .art-link {
   display: inline-block;
   transition: 0.15s;
 }
@@ -1566,7 +1600,7 @@ a:focus .art-button .inner-btn, a:focus .game-button .inner-btn {
   font-family: "Lufga";
   src: url("assets/fonts/LufgaBold.otf") format("opentype");
 }
-#footer #signature, body, .new-stamp, p, .game-article .featured, .art-article .featured, .art-panel .featured, #graphism-panel .featured, .tip .featured {
+#footer #signature, body, .new-stamp, p, #bio .intro, .game-article .featured, .art-article .featured, .art-panel .featured, #graphism-panel .featured, .tip .featured {
   font-family: "Gotham", sans-serif;
 }
 
@@ -1574,7 +1608,7 @@ a:focus .art-button .inner-btn, a:focus .game-button .inner-btn {
   font-family: "Comfortaa", sans-serif;
 }
 
-#caution h3, h2 {
+#caution h3, h2, #bio p {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -1750,7 +1784,7 @@ div {
   font-family: "Lufga";
   src: url("assets/fonts/LufgaBold.otf") format("opentype");
 }
-body, .new-stamp, p, .game-article .featured, .art-article .featured, .art-panel .featured, #graphism-panel .featured, .tip .featured, #footer #signature {
+body, .new-stamp, p, #bio .intro, .game-article .featured, .art-article .featured, .art-panel .featured, #graphism-panel .featured, .tip .featured, #footer #signature {
   font-family: "Gotham", sans-serif;
 }
 
@@ -1758,7 +1792,7 @@ body, .new-stamp, p, .game-article .featured, .art-article .featured, .art-panel
   font-family: "Comfortaa", sans-serif;
 }
 
-#caution h3, h2 {
+#caution h3, h2, #bio p {
   font-family: "Greycliff", sans-serif;
 }
 

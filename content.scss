@@ -36,6 +36,53 @@ p {
     }
 }
 
+#bio {
+    text-align: justify;
+    width: 70%;
+    
+    p {
+        @extend %greycliff;
+        color: rgb(215, 215, 230);
+        font-size: 12pt;
+
+        .link {
+            color: white;
+            text-decoration: underline;
+            
+            img {
+                height: 12pt;
+                transform: translate(0, 2.5pt);
+                margin-right: 2pt;
+            }
+        }
+
+        .youtube {
+            text-shadow: 1pt 1pt red;
+        }
+
+        .stickpage {
+            text-shadow: 1pt 1pt rgba(100, 100, 110);
+        }
+
+        .stick-fighter {
+            text-shadow: 1pt 1pt blue;
+        }
+    }
+
+    .intro {
+        @extend %gotham;
+        font-size: 14pt;
+    }
+
+    .left {
+        transform: translate(-5%);
+    }
+
+    .right {
+        transform: translate(5%);
+    }
+}
+
 #intro {
     text-align: justify;
     width: 70%;
@@ -44,14 +91,10 @@ p {
         font-size: 18pt;
     }
 
-    %white {
-        color: white;
-    }
-
     %shadowed {
-        @extend %white;
         @extend %lufga;
 
+        color: white;
         display: inline-block;
         transition: .15s;
 
