@@ -34,11 +34,11 @@
   font-family: "Gotham", sans-serif;
 }
 
-.art-article .read-more, .game-article .read-more, #sub-panel #label-container-music, #sub-panel #label-container-anims, #sub-panel #label-container-games, #sub-panel #label-container-art, #caution p {
+#caution p, .art-article .read-more, .game-article .read-more, #sub-panel #label-container-music, #sub-panel #label-container-anims, #sub-panel #label-container-games, #sub-panel #label-container-art {
   font-family: "Comfortaa", sans-serif;
 }
 
-#bio p, h2, #caution h3 {
+#caution h3, #bio p, h2 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -93,7 +93,7 @@ div {
   width: 100%;
 }
 
-.center, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box, #caution p, #caution {
+.center, #caution p, #caution, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -101,35 +101,6 @@ div {
 
 .hidden {
   display: none;
-}
-
-#caution {
-  margin-top: 50px;
-}
-#caution .crossed-line, #caution p {
-  border: 10px solid rgba(225, 255, 0, 0.7);
-  border-width: 0 0 10px 0;
-  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
-}
-#caution h2 {
-  text-transform: uppercase;
-  background-color: rgba(225, 250, 100, 0.1);
-  font-size: 48pt;
-  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
-}
-#caution h3 {
-  font-size: 16pt;
-  background-color: rgba(225, 250, 100, 0.1);
-  margin: 0;
-  padding-bottom: 10px;
-  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
-}
-#caution .content {
-  background-color: rgba(225, 250, 100, 0.25);
-}
-#caution p {
-  color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 30px;
 }
 
 #top-panel {
@@ -389,11 +360,11 @@ div {
   font-family: "Gotham", sans-serif;
 }
 
-.art-article .read-more, .game-article .read-more, #caution p, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music {
+#caution p, .art-article .read-more, .game-article .read-more, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music {
   font-family: "Comfortaa", sans-serif;
 }
 
-#bio p, h2, #caution h3 {
+#caution h3, #bio p, h2 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -448,7 +419,7 @@ div {
   width: 100%;
 }
 
-.center, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box, #caution, #caution p {
+.center, #caution p, #caution, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -456,35 +427,6 @@ div {
 
 .hidden {
   display: none;
-}
-
-#caution {
-  margin-top: 50px;
-}
-#caution .crossed-line, #caution p {
-  border: 10px solid rgba(225, 255, 0, 0.7);
-  border-width: 0 0 10px 0;
-  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
-}
-#caution h2 {
-  text-transform: uppercase;
-  background-color: rgba(225, 250, 100, 0.1);
-  font-size: 48pt;
-  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
-}
-#caution h3 {
-  font-size: 16pt;
-  background-color: rgba(225, 250, 100, 0.1);
-  margin: 0;
-  padding-bottom: 10px;
-  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
-}
-#caution .content {
-  background-color: rgba(225, 250, 100, 0.25);
-}
-#caution p {
-  color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 30px;
 }
 
 svg {
@@ -826,11 +768,11 @@ svg {
   font-family: "Gotham", sans-serif;
 }
 
-.art-article .read-more, .game-article .read-more, #caution p, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music {
+#caution p, .art-article .read-more, .game-article .read-more, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music {
   font-family: "Comfortaa", sans-serif;
 }
 
-#bio p, h2, #caution h3 {
+#caution h3, #bio p, h2 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -885,7 +827,7 @@ div {
   width: 100%;
 }
 
-.center, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box, #caution, #caution p {
+.center, #caution p, #caution, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -893,35 +835,6 @@ div {
 
 .hidden {
   display: none;
-}
-
-#caution {
-  margin-top: 50px;
-}
-#caution .crossed-line, #caution p {
-  border: 10px solid rgba(225, 255, 0, 0.7);
-  border-width: 0 0 10px 0;
-  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
-}
-#caution h2 {
-  text-transform: uppercase;
-  background-color: rgba(225, 250, 100, 0.1);
-  font-size: 48pt;
-  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
-}
-#caution h3 {
-  font-size: 16pt;
-  background-color: rgba(225, 250, 100, 0.1);
-  margin: 0;
-  padding-bottom: 10px;
-  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
-}
-#caution .content {
-  background-color: rgba(225, 250, 100, 0.25);
-}
-#caution p {
-  color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 30px;
 }
 
 @font-face {
@@ -948,11 +861,11 @@ div {
   font-family: "Gotham", sans-serif;
 }
 
-.art-article .read-more, .game-article .read-more, #caution p, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music {
+#caution p, .art-article .read-more, .game-article .read-more, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music {
   font-family: "Comfortaa", sans-serif;
 }
 
-#bio p, h2, #caution h3 {
+#caution h3, #bio p, h2 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -1007,7 +920,7 @@ div {
   width: 100%;
 }
 
-.center, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box, #caution, #caution p {
+.center, #caution p, #caution, .tip .follow-box .links .link-box, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box .links .link-box, .art-article .follow-box .links .link-box, .game-article .follow-box .links .link-box, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .follow-box, .art-panel .follow-box, #graphism-panel .follow-box, .art-article .follow-box, .game-article .follow-box {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1015,35 +928,6 @@ div {
 
 .hidden {
   display: none;
-}
-
-#caution {
-  margin-top: 50px;
-}
-#caution .crossed-line, #caution p {
-  border: 10px solid rgba(225, 255, 0, 0.7);
-  border-width: 0 0 10px 0;
-  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
-}
-#caution h2 {
-  text-transform: uppercase;
-  background-color: rgba(225, 250, 100, 0.1);
-  font-size: 48pt;
-  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
-}
-#caution h3 {
-  font-size: 16pt;
-  background-color: rgba(225, 250, 100, 0.1);
-  margin: 0;
-  padding-bottom: 10px;
-  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
-}
-#caution .content {
-  background-color: rgba(225, 250, 100, 0.25);
-}
-#caution p {
-  color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 30px;
 }
 
 #top-panel {
@@ -1663,7 +1547,7 @@ div {
   width: 100%;
 }
 
-.center, #caution, #caution p, .game-article .follow-box, .game-article .follow-box .links, .game-article .follow-box .links .link-box, .art-article .follow-box, .art-article .follow-box .links, .art-article .follow-box .links .link-box, .art-panel .follow-box, .art-panel .follow-box .links, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box, #graphism-panel .follow-box .links, #graphism-panel .follow-box .links .link-box, .tip .follow-box, .tip .follow-box .links, .tip .follow-box .links .link-box {
+.center, #caution p, #caution, .game-article .follow-box, .game-article .follow-box .links, .game-article .follow-box .links .link-box, .art-article .follow-box, .art-article .follow-box .links, .art-article .follow-box .links .link-box, .art-panel .follow-box, .art-panel .follow-box .links, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box, #graphism-panel .follow-box .links, #graphism-panel .follow-box .links .link-box, .tip .follow-box, .tip .follow-box .links, .tip .follow-box .links .link-box {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1671,35 +1555,6 @@ div {
 
 .hidden {
   display: none;
-}
-
-#caution {
-  margin-top: 50px;
-}
-#caution .crossed-line, #caution p {
-  border: 10px solid rgba(225, 255, 0, 0.7);
-  border-width: 0 0 10px 0;
-  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
-}
-#caution h2 {
-  text-transform: uppercase;
-  background-color: rgba(225, 250, 100, 0.1);
-  font-size: 48pt;
-  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
-}
-#caution h3 {
-  font-size: 16pt;
-  background-color: rgba(225, 250, 100, 0.1);
-  margin: 0;
-  padding-bottom: 10px;
-  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
-}
-#caution .content {
-  background-color: rgba(225, 250, 100, 0.25);
-}
-#caution p {
-  color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 30px;
 }
 
 #footer {
@@ -1764,6 +1619,35 @@ div {
   display: none;
 }
 
+#caution {
+  margin-top: 50px;
+}
+#caution .crossed-line, #caution p {
+  border: 10px solid rgba(225, 255, 0, 0.7);
+  border-width: 0 0 10px 0;
+  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
+}
+#caution h2 {
+  text-transform: uppercase;
+  background-color: rgba(225, 250, 100, 0.1);
+  font-size: 48pt;
+  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
+}
+#caution h3 {
+  font-size: 16pt;
+  background-color: rgba(225, 250, 100, 0.1);
+  margin: 0;
+  padding: 10px 0;
+  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
+}
+#caution .content {
+  background-color: rgba(225, 250, 100, 0.25);
+}
+#caution p {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 10px 30px 30px 30px;
+}
+
 @font-face {
   font-family: "Bahnschrift";
   src: url("assets/fonts/Bahnschrift.ttf") format("truetype");
@@ -1788,11 +1672,11 @@ body, .new-stamp, p, #bio .intro, .game-article .featured, .art-article .feature
   font-family: "Gotham", sans-serif;
 }
 
-#caution p, #sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music, .game-article .read-more, .art-article .read-more {
+#sub-panel #label-container-art, #sub-panel #label-container-games, #sub-panel #label-container-anims, #sub-panel #label-container-music, .game-article .read-more, .art-article .read-more, #caution p {
   font-family: "Comfortaa", sans-serif;
 }
 
-#caution h3, h2, #bio p {
+h2, #bio p, #caution h3 {
   font-family: "Greycliff", sans-serif;
 }
 
@@ -1847,7 +1731,7 @@ div {
   width: 100%;
 }
 
-.center, #caution, #caution p, .game-article .follow-box, .game-article .follow-box .links, .game-article .follow-box .links .link-box, .art-article .follow-box, .art-article .follow-box .links, .art-article .follow-box .links .link-box, .art-panel .follow-box, .art-panel .follow-box .links, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box, #graphism-panel .follow-box .links, #graphism-panel .follow-box .links .link-box, .tip .follow-box, .tip .follow-box .links, .tip .follow-box .links .link-box {
+.center, .game-article .follow-box, .game-article .follow-box .links, .game-article .follow-box .links .link-box, .art-article .follow-box, .art-article .follow-box .links, .art-article .follow-box .links .link-box, .art-panel .follow-box, .art-panel .follow-box .links, .art-panel .follow-box .links .link-box, #graphism-panel .follow-box, #graphism-panel .follow-box .links, #graphism-panel .follow-box .links .link-box, .tip .follow-box, .tip .follow-box .links, .tip .follow-box .links .link-box, #caution, #caution p {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1855,35 +1739,6 @@ div {
 
 .hidden {
   display: none;
-}
-
-#caution {
-  margin-top: 50px;
-}
-#caution .crossed-line, #caution p {
-  border: 10px solid rgba(225, 255, 0, 0.7);
-  border-width: 0 0 10px 0;
-  border-image: repeating-linear-gradient(-75deg, transparent, transparent 5px, rgba(225, 255, 0, 0.7) 6px, rgba(225, 255, 0, 0.7) 10px) 25 0;
-}
-#caution h2 {
-  text-transform: uppercase;
-  background-color: rgba(225, 250, 100, 0.1);
-  font-size: 48pt;
-  text-shadow: -5px 5px rgba(0, 0, 0, 0.4);
-}
-#caution h3 {
-  font-size: 16pt;
-  background-color: rgba(225, 250, 100, 0.1);
-  margin: 0;
-  padding-bottom: 10px;
-  text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.2);
-}
-#caution .content {
-  background-color: rgba(225, 250, 100, 0.25);
-}
-#caution p {
-  color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 30px;
 }
 
 svg {
