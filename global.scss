@@ -44,7 +44,7 @@
 
 html {
     height: 100%;
-}
+} 
 
 body {
     @extend %gotham;
@@ -67,8 +67,8 @@ div {
     box-sizing: border-box; // life saviour 
 }
  
-.flex { display: flex; border: solid 2px red; } 
-.spacer { flex-grow: 1; border: solid 2px blue; }
+.flex { display: flex; } 
+.spacer { flex-grow: 1; }
 .border { border: solid 2px white; }
 .line { width: 100%; }
 .center {

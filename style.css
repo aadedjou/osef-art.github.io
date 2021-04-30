@@ -79,12 +79,10 @@ div {
 
 .flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #hide-button #close-button, #hide-button, #bubble-container div, .new-stamp, #sub-panel, #top-panel #logo-container, #top-panel {
   display: flex;
-  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
-  border: solid 2px blue;
 }
 
 .border {
@@ -407,12 +405,10 @@ div {
 
 .flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #hide-button #close-button, #hide-button, #bubble-container div, .new-stamp, #top-panel, #top-panel #logo-container, #sub-panel {
   display: flex;
-  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
-  border: solid 2px blue;
 }
 
 .border {
@@ -817,12 +813,10 @@ div {
 
 .flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button {
   display: flex;
-  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
-  border: solid 2px blue;
 }
 
 .border {
@@ -912,12 +906,10 @@ div {
 
 .flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button {
   display: flex;
-  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
-  border: solid 2px blue;
 }
 
 .border {
@@ -1617,12 +1609,10 @@ div {
 
 .flex, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button, .panel-line, .game-article .featured, .game-article .follow-box .links, .game-article, .game-article .read-more, .art-article .featured, .art-article .follow-box .links, .art-article, .art-article .read-more, .art-panel .featured, .art-panel .follow-box .links, #graphism-panel .featured, #graphism-panel .follow-box .links, .tip .featured, .tip .follow-box .links, .dl-game-button .inner-btn, .dl-anim .inner-btn, .dl-anim .dl-icon {
   display: flex;
-  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
-  border: solid 2px blue;
 }
 
 .border {
@@ -1793,12 +1783,10 @@ div {
 
 .flex, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button, .panel-line, .game-article .featured, .game-article .follow-box .links, .game-article, .game-article .read-more, .art-article .featured, .art-article .follow-box .links, .art-article, .art-article .read-more, .art-panel .featured, .art-panel .follow-box .links, #graphism-panel .featured, #graphism-panel .follow-box .links, .tip .featured, .tip .follow-box .links, .dl-game-button .inner-btn, .dl-anim .inner-btn, .dl-anim .dl-icon {
   display: flex;
-  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
-  border: solid 2px blue;
 }
 
 .border {
