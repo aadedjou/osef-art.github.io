@@ -1,4 +1,7 @@
-var copied = false;
+var stats = { 
+    'discord': { 'copied': false, 'gradient': 'rgba(200, 125, 250, 0.75), rgba(150, 150, 250, 0.75)', 'href': 'https://discord.gg'}, 
+    'mail': { 'copied': false, 'gradient': 'rgba(200, 125, 250, 0.75), rgba(250, 100, 175, 0.75)', 'href': 'mailto:sirosef@gmail.com'} 
+};
 const m = 0.512286623256592433;
 
 function buildWave(w, h) { 
@@ -63,29 +66,36 @@ function buildWave(w, h) {
 
 buildWave(90, 60);
 
-function copy(that) {
+function copy(id) {
     var inp = document.createElement('input');
+
     document.body.appendChild(inp)
-    inp.value = document.getElementById('discord-link').textContent
+    inp.value = document.getElementById(id + '-id').textContent
     inp.select();
     document.execCommand('copy', false);
     inp.remove();
 
-    var tip = document.getElementById('copytip');
+    if (stats[id]['copied']) {
+        document.getElementById(id + '-link').href = stats[id]['href'];
+    }
+
+    var tip = document.getElementById(id + '-tip');
     tip.classList = ['thin tooltip-text']
     tip.textContent = "Copied !"
-    tip.style.background = "linear-gradient(to left, rgba(200, 125, 250, 0.75), rgb(150, 150, 250, 0.75))";
+    tip.style.background = "linear-gradient(to left, " + stats[id]['gradient'] + ")";
     tip.style.padding = " 5px 10px";
     tip.style.transition = "0s";
-    copied = true;
+    stats[id]['copied'] = true;
 }
 
-function resetTip(that) {
-    if (!copied) return;
-    var tip = document.getElementById('copytip');
+function resetTip(id) {
+    if (!stats[id]['copied']) return;
+    var tip = document.getElementById(id + '-tip');
     tip.classList = ['thin tooltip-text']
-    tip.textContent = "Click to copy the id again."
-    tip.style.background = "rgb(0, 0, 0, 0.25)";
+    tip.textContent = "Click to copy my " + id +" again."
+    tip.style.background = "rgb(0, 0, 0, 0.5)";
+    document.getElementById(id + '-link').removeAttribute("href");
+    stats[id]['copied'] = false;
 }
 
 function recolorDot(page) {
@@ -169,4 +179,9 @@ function readMore(id) {
 function hideBitmoji() {
     var bmj = document.getElementById("bitmosef-container");
     bmj.classList += " hidden";
+}
+
+function animDlButton(id) {
+    button = document.getElementById(id);
+    button.classList = 'dl-anim';
 }

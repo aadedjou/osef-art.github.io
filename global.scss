@@ -67,8 +67,8 @@ div {
     box-sizing: border-box; // life saviour 
 }
  
-.flex { display: flex; } 
-.spacer { flex-grow: 1; }
+.flex { display: flex; border: solid 2px red; } 
+.spacer { flex-grow: 1; border: solid 2px blue; }
 .border { border: solid 2px white; }
 .line { width: 100%; }
 .center {
@@ -79,7 +79,6 @@ div {
 .hidden {
     display: none;
 }
-
 
 $art-color: rgb(250, 25, 125);
 $games-color: rgb(175, 150, 250);

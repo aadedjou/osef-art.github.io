@@ -1,4 +1,5 @@
 <head>
+    <title>welcome.</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
     <link rel="stylesheet" type="text/css"  href="style.css">
     <link rel="icon"       type="image/png" href="assets/favicons/fav_home.png"/>
@@ -81,15 +82,24 @@
         </div>
         <div class="spacer"></div>
     </div>
+
+    <div class="flex" style="height: 200px; margin: 50px 0;">
+        <div class="spacer"></div>
+        <img src="assets/wallpapers/canyon.jpg" alt="">
+        <div class="spacer"></div>
+        <img src="assets/wallpapers/smoke.jpg" alt="">
+        <div class="spacer"></div>
+    </div>
+
     
-    <a id="bitmosef-container" href="about-me.html" tabindex="-1">
-        <div>
+    <div id="bitmosef-container">
+        <a id="bitmosef-body" href="about-me.html" tabindex="-1">
             <div class="shadow"></div>
             <img id="bitmosef-head" src="assets/icons/head.png">
             <img id="bitmosef-glasses" src="assets/icons/glasses.png">
             <img id="bitmosef-hand-l" src="assets/icons/hand.png">
             <img id="bitmosef-hand-r" src="assets/icons/hand.png">
-        </div>
+        </a>
 
         <div id="bitmosef-bubble">
             <div id="bubble-container">
@@ -100,17 +110,18 @@
 
         <div id="bitmosef-hide">
             <div id="hide-button"> 
-                <div id="close-button" onclick="hideBitmoji()">
+                <div id="close-button" c="hideBitmoji()">
                     <img src="assets/icons/exit-icon.png">
                 </div>
                 <span>HIDE</span>
             </div>
         </div>
-    </a> 
+    </div> 
 
     <div class="flex">
         <div class="spacer"></div>
             <div class="articles-container">
+
                 <div class="game-article">
                     <div class="thumbnail">
                         <div id="ministick-carousel">
@@ -143,21 +154,32 @@
                             <span class="bright">How far</span>  can you get ? 💨
                         </p>
                         
-                        <a href="#">
-                            <div class="game-button">
-                                <span> PLAY !</span>
-                                <div class="inner-btn">
-                                    <img src="assets/icons/play-icon.png">
+                        <div class="flex">
+                            <div class="spacer"></div>
+                            <a target="_blank" href="https://github.com/osef-art/ministick">
+                                <div class="game-button">
+                                    <span> PLAY !</span>
+                                    <div class="inner-btn">
+                                        <img src="assets/icons/play-icon.png">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                            <a target="_blank" href="https://github.com/osef-art/ministick/archive/refs/heads/main.zip" onclick="animDlButton('dl-ministick')">
+                                <div id="dl-ministick" class="dl-game-button">
+                                    <img class="dl-icon" src="assets/icons/arrow-icon.png">
+                                    <div class="inner-btn">
+                                        <img src="assets/icons/tick-icon.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="spacer"></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="panel-line">
                     <div id="graphism-panel">
                         <h2 class="shadow"> graphism </h2>
-
                             <div id="art-carousel">
                                 <figure id="art-slider">
                                     <img src="assets/wallpapers/canyon.jpg">
@@ -175,14 +197,19 @@
                             <div class="dot"></div>
                         </div>
 
-                        <a href="artwork.html">
-                            <div class="art-button">
-                                <span> PEEK </span>
-                                <div class="inner-btn">
-                                    <img src="assets/icons/eye-icon.png">
+                        <div class="flex">
+                            <div class="spacer"></div>
+                            <a href="artwork.html">
+                                <div class="art-button">
+                                    <span> PEEK </span>
+                                    <div class="inner-btn">
+                                        <img src="assets/icons/eye-icon.png">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                            <div class="spacer"></div>
+                        </div>
+                        
                     </div>
                     
                     <div class="vertical-spacer"></div>
@@ -226,7 +253,7 @@
                         </p>
                         <div id="collab-rm" class="read-more">
                             <div class="spacer"><div class="stroke"></div></div>
-                            <span onclick="readMore('collab')">Read more...</span>
+                            <span c="readMore('collab')">Read more...</span>
                             <div class="spacer"><div class="stroke"></div></div>
                         </div>
                         <p id="collab-text" class="hidden">
@@ -274,11 +301,24 @@
                             Since the game had a lot of success among my friends,
                             I have started to upgrade it to a <span class="bright">next level</span>. <br>
                             I'm planning to make the game more <span class="bright">clever</span> and implement
-                            more precise <span class="bright">fighting</span>/<span class="bright">combo</span> mecanics. <br>
+                            more precise <span class="bright">fighting</span>/<span class="bright">combo</span> mechanics. <br>
                             I've already <span class="bright">smoothen</span> the animation and added a bunch of
                             <span class="bright">new moves</span> ! <br>
                             Stay tuned 👀
                         </p>
+
+                        <div class="flex">
+                            <div class="spacer"></div>
+                            <a target="_blank" href="https://github.com/osef-art/ministick-moves/archive/refs/heads/master.zip" onclick="animDlButton('dl-ministick-moves')">
+                                <div id="dl-ministick-moves" class="dl-game-button">
+                                    <img class="dl-icon" src="assets/icons/arrow-icon.png">
+                                    <div class="inner-btn">
+                                        <img src="assets/icons/tick-icon.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="spacer"></div>
+                        </div>
                     </div>
 
                     <div class="thumbnail">

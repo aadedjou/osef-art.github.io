@@ -46,7 +46,7 @@
   font-family: "Lufga", sans-serif;
 }
 
-.art-button, .game-button {
+.dl-game-button, .dl-anim, .art-button, .game-button {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -77,12 +77,14 @@ div {
   box-sizing: border-box;
 }
 
-.flex, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #hide-button #close-button, #hide-button, #bubble-container div, .new-stamp, #sub-panel, #top-panel #logo-container, #top-panel {
+.flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #hide-button #close-button, #hide-button, #bubble-container div, .new-stamp, #sub-panel, #top-panel #logo-container, #top-panel {
   display: flex;
+  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
+  border: solid 2px blue;
 }
 
 .border {
@@ -99,7 +101,7 @@ div {
   justify-content: center;
 }
 
-.hidden {
+.hidden, #mail-id, #discord-id {
   display: none;
 }
 
@@ -372,7 +374,7 @@ div {
   font-family: "Lufga", sans-serif;
 }
 
-.art-button, .game-button {
+.dl-game-button, .dl-anim, .art-button, .game-button {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -403,12 +405,14 @@ div {
   box-sizing: border-box;
 }
 
-.flex, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #hide-button #close-button, #hide-button, #bubble-container div, .new-stamp, #top-panel, #top-panel #logo-container, #sub-panel {
+.flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #hide-button #close-button, #hide-button, #bubble-container div, .new-stamp, #top-panel, #top-panel #logo-container, #sub-panel {
   display: flex;
+  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
+  border: solid 2px blue;
 }
 
 .border {
@@ -425,7 +429,7 @@ div {
   justify-content: center;
 }
 
-.hidden {
+.hidden, #mail-id, #discord-id {
   display: none;
 }
 
@@ -538,7 +542,7 @@ svg {
   z-index: 10;
   transition: 0.3s;
 }
-#bitmosef-container div .shadow {
+#bitmosef-container #bitmosef-body .shadow {
   position: absolute;
   height: 128px;
   width: 128px;
@@ -780,7 +784,7 @@ svg {
   font-family: "Lufga", sans-serif;
 }
 
-.art-button, .game-button {
+.dl-game-button, .dl-anim, .art-button, .game-button {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -811,12 +815,14 @@ div {
   box-sizing: border-box;
 }
 
-.flex, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button {
+.flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button {
   display: flex;
+  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
+  border: solid 2px blue;
 }
 
 .border {
@@ -833,7 +839,7 @@ div {
   justify-content: center;
 }
 
-.hidden {
+.hidden, #mail-id, #discord-id {
   display: none;
 }
 
@@ -873,7 +879,7 @@ div {
   font-family: "Lufga", sans-serif;
 }
 
-.art-button, .game-button {
+.dl-game-button, .dl-anim, .art-button, .game-button {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -904,12 +910,14 @@ div {
   box-sizing: border-box;
 }
 
-.flex, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button {
+.flex, .dl-anim .dl-icon, .dl-game-button .inner-btn, .dl-anim .inner-btn, .art-article .read-more, .game-article .read-more, .art-article, .game-article, .tip .follow-box .links, .art-panel .follow-box .links, #graphism-panel .follow-box .links, .art-article .follow-box .links, .game-article .follow-box .links, .tip .featured, .art-panel .featured, #graphism-panel .featured, .art-article .featured, .game-article .featured, .panel-line, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button {
   display: flex;
+  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
+  border: solid 2px blue;
 }
 
 .border {
@@ -926,7 +934,7 @@ div {
   justify-content: center;
 }
 
-.hidden {
+.hidden, #mail-id, #discord-id {
   display: none;
 }
 
@@ -1349,7 +1357,7 @@ p .bright {
 .art-button, .game-button {
   width: 150px;
   height: 50px;
-  margin: 20px auto;
+  margin: 20px 10px;
   padding: 5px 0;
   overflow: hidden;
   text-align: center;
@@ -1365,12 +1373,6 @@ p .bright {
   display: inline-block;
   transition: 0.3s;
 }
-.art-button:hover span, .game-button:hover span {
-  margin-left: 50px;
-}
-.art-button:hover .inner-btn, .game-button:hover .inner-btn {
-  left: 0;
-}
 .art-button .inner-btn, .game-button .inner-btn {
   display: flex;
   justify-content: center;
@@ -1385,12 +1387,50 @@ p .bright {
 .art-button .inner-btn img, .game-button .inner-btn img {
   height: 40%;
 }
-
-a:focus .art-button span, a:focus .game-button span {
+.art-button:hover span, .game-button:hover span {
   margin-left: 50px;
 }
-a:focus .art-button .inner-btn, a:focus .game-button .inner-btn {
+.art-button:hover .inner-btn, .game-button:hover .inner-btn {
   left: 0;
+}
+
+.dl-game-button, .dl-anim {
+  width: 50px;
+  height: 50px;
+  margin: 20px 10px;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.dl-game-button .dl-icon, .dl-anim .dl-icon {
+  position: absolute;
+  margin: 12.5px 0 0 12.5px;
+  height: 25px;
+  border-bottom: solid white 0;
+  transition: 0.3s;
+}
+.dl-game-button .inner-btn, .dl-anim .inner-btn {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: -75px;
+  border-bottom: solid white 50px;
+}
+.dl-game-button .inner-btn img, .dl-anim .inner-btn img {
+  height: 50%;
+}
+.dl-game-button:hover, .dl-anim:hover {
+  transform: scale(1.25);
+}
+.dl-game-button:hover .dl-icon, .dl-anim:hover .dl-icon {
+  margin-top: 8.5px;
+  border-bottom: solid white 4px;
 }
 
 .game-button {
@@ -1405,6 +1445,50 @@ a:focus .art-button .inner-btn, a:focus .game-button .inner-btn {
 }
 .art-button .inner-btn {
   background: #e1006e;
+}
+
+.dl-game-button, .dl-anim {
+  background-color: #af96fa;
+}
+.dl-game-button .inner-btn, .dl-anim .inner-btn {
+  background: #32e1c8;
+}
+
+.dl-anim .dl-icon {
+  position: absolute;
+  animation: hide-icon 2.5s ease;
+  animation-fill-mode: forwards;
+}
+.dl-anim .inner-btn {
+  animation: tick-dl 0.5s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.dl-anim:hover {
+  transform: none;
+}
+@keyframes tick-dl {
+  100% {
+    border-bottom: solid white 0;
+    top: 0;
+  }
+}
+@keyframes hide-icon {
+  75% {
+    margin-top: 3.125px;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+}
+
+a:focus .game-button span, a:focus .art-button span {
+  margin-left: 50px;
+}
+a:focus .game-button .inner-btn, a:focus .art-button .inner-btn {
+  left: 0;
 }
 
 #ministick2-carousel, #ministick-carousel, #art-carousel {
@@ -1500,7 +1584,7 @@ a:focus .art-button .inner-btn, a:focus .game-button .inner-btn {
   font-family: "Lufga", sans-serif;
 }
 
-.game-button, .art-button {
+.game-button, .art-button, .dl-game-button, .dl-anim {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -1531,12 +1615,14 @@ div {
   box-sizing: border-box;
 }
 
-.flex, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button, .panel-line, .game-article .featured, .game-article .follow-box .links, .game-article, .game-article .read-more, .art-article .featured, .art-article .follow-box .links, .art-article, .art-article .read-more, .art-panel .featured, .art-panel .follow-box .links, #graphism-panel .featured, #graphism-panel .follow-box .links, .tip .featured, .tip .follow-box .links {
+.flex, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button, .panel-line, .game-article .featured, .game-article .follow-box .links, .game-article, .game-article .read-more, .art-article .featured, .art-article .follow-box .links, .art-article, .art-article .read-more, .art-panel .featured, .art-panel .follow-box .links, #graphism-panel .featured, #graphism-panel .follow-box .links, .tip .featured, .tip .follow-box .links, .dl-game-button .inner-btn, .dl-anim .inner-btn, .dl-anim .dl-icon {
   display: flex;
+  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
+  border: solid 2px blue;
 }
 
 .border {
@@ -1553,69 +1639,7 @@ div {
   justify-content: center;
 }
 
-.hidden {
-  display: none;
-}
-
-#footer {
-  display: block;
-  background-color: #35323a;
-  bottom: 0;
-  padding: 10px 0px;
-}
-#footer div {
-  padding: 0px 5px;
-}
-#footer .link-box {
-  width: 50px;
-  height: 50px;
-  margin: 0px 2.5px;
-}
-#footer .link-box img {
-  height: 40px;
-  cursor: pointer;
-  transition: ease-out 0.2s;
-  margin: 2.5px;
-}
-#footer .link-box img:hover {
-  margin: 0px;
-  height: 45px;
-}
-#footer .link-box a:focus img {
-  margin: 0px;
-  height: 45px;
-}
-#footer #signature {
-  font-size: 14pt;
-  color: #9996a0;
-  text-shadow: 0px -2px rgba(0, 0, 0, 0.75);
-  transition: 0.3s;
-}
-#footer #signature:hover {
-  color: #c8c8d2;
-}
-#copytip {
-  visibility: hidden;
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  border-radius: 7.5px;
-  padding: 5px 10px;
-  transition: 0.25s;
-  /* Position the tooltip */
-  position: fixed;
-  bottom: 0;
-  margin-left: 50px;
-}
-
-#discord-link:hover ~ #copytip {
-  visibility: visible;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  bottom: 50px;
-}
-
-#discord-id {
+.hidden, #mail-id, #discord-id {
   display: none;
 }
 
@@ -1646,6 +1670,58 @@ div {
 #caution p {
   color: rgba(255, 255, 255, 0.75);
   padding: 10px 30px 30px 30px;
+}
+
+#footer {
+  display: block;
+  background-color: #35323a;
+  bottom: 0;
+  padding: 10px 0px;
+}
+#footer div {
+  padding: 0px 5px;
+}
+#footer .link-box {
+  width: 50px;
+  height: 50px;
+  margin: 0px 2.5px;
+}
+#footer .link-box img {
+  height: 40px;
+  cursor: pointer;
+  transition: ease-out 0.2s;
+  margin: 2.5px;
+}
+#footer .link-box a:focus img, #footer .link-box img:hover {
+  margin: 0px;
+  height: 45px;
+}
+#footer #signature {
+  font-size: 14pt;
+  color: #9996a0;
+  text-shadow: 0px -2px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+}
+#footer #signature:hover {
+  color: #c8c8d2;
+}
+#mail-tip, #discord-tip {
+  visibility: hidden;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  border-radius: 7.5px;
+  padding: 5px 10px;
+  transition: 0.35s;
+  position: fixed;
+  bottom: 120px;
+}
+
+#mail-img:hover ~ #mail-tip, #discord-img:hover ~ #discord-tip {
+  visibility: visible;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 86px;
 }
 
 @font-face {
@@ -1684,7 +1760,7 @@ h2, #bio p, #caution h3 {
   font-family: "Lufga", sans-serif;
 }
 
-.game-button, .art-button {
+.game-button, .art-button, .dl-game-button, .dl-anim {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -1715,12 +1791,14 @@ div {
   box-sizing: border-box;
 }
 
-.flex, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button, .panel-line, .game-article .featured, .game-article .follow-box .links, .game-article, .game-article .read-more, .art-article .featured, .art-article .follow-box .links, .art-article, .art-article .read-more, .art-panel .featured, .art-panel .follow-box .links, #graphism-panel .featured, #graphism-panel .follow-box .links, .tip .featured, .tip .follow-box .links {
+.flex, #top-panel, #top-panel #logo-container, #sub-panel, .new-stamp, #bubble-container div, #hide-button, #hide-button #close-button, .panel-line, .game-article .featured, .game-article .follow-box .links, .game-article, .game-article .read-more, .art-article .featured, .art-article .follow-box .links, .art-article, .art-article .read-more, .art-panel .featured, .art-panel .follow-box .links, #graphism-panel .featured, #graphism-panel .follow-box .links, .tip .featured, .tip .follow-box .links, .dl-game-button .inner-btn, .dl-anim .inner-btn, .dl-anim .dl-icon {
   display: flex;
+  border: solid 2px red;
 }
 
 .spacer {
   flex-grow: 1;
+  border: solid 2px blue;
 }
 
 .border {
@@ -1737,7 +1815,7 @@ div {
   justify-content: center;
 }
 
-.hidden {
+.hidden, #discord-id, #mail-id {
   display: none;
 }
 
@@ -1850,7 +1928,7 @@ svg {
   z-index: 10;
   transition: 0.3s;
 }
-#bitmosef-container div .shadow {
+#bitmosef-container #bitmosef-body .shadow {
   position: absolute;
   height: 128px;
   width: 128px;

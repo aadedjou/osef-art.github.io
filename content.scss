@@ -402,7 +402,7 @@ $btn-size: 50px;
     
     width : 150px;
     height: $btn-size;
-    margin : 20px auto;
+    margin : 20px 10px;
     padding: 5px 0;
 
     overflow: hidden;
@@ -421,12 +421,6 @@ $btn-size: 50px;
         display: inline-block;
         transition : .3s;
     }
-    &:hover span { 
-        margin-left : $btn-size;
-    }
-    &:hover .inner-btn{
-        left: 0;
-    }
     
     .inner-btn {
         display: flex;
@@ -437,27 +431,76 @@ $btn-size: 50px;
         height: $btn-size + 20px;
         
         left : -$btn-size;
-        top: -$btn-size ;
+        top: -$btn-size;
         transition : .3s;
 
         img {
             height: 40%;
         }
     }
-}
 
-a:focus {
-    %button {
-        span {
+    &:hover {
+        span { 
             margin-left : $btn-size;
         }
 
-        .inner-btn{
+        .inner-btn {
             left: 0;
         }
     }
 }
 
+%dl-button {
+    @extend %quicksand;
+    
+    width: $btn-size;
+    height: $btn-size;
+    margin: 20px 10px;
+
+    overflow: hidden;
+    cursor : pointer;
+    
+    color: white;
+    font-size: $btn-size - 20px;
+    border-radius: $btn-size / 2;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    transition : .5s;
+
+    .dl-icon {
+        position: absolute;
+        margin: $btn-size / 4 0 0 $btn-size / 4;
+        height: $btn-size / 2;
+        border-bottom: solid white 0;
+        transition: .3s;
+    }
+    
+    .inner-btn {
+        @extend .flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: $btn-size;
+        width: $btn-size;
+        
+        top: -$btn-size * 1.5;
+        border-bottom: solid white $btn-size;
+
+        img {
+            height: 50%;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.25);
+
+        .dl-icon {
+            margin-top: $btn-size / 4 - 4px;
+            border-bottom: solid white 4px;
+        }
+    }
+}
+
+ 
 .game-button {
     @extend %button;
     background-color: $games-color;
@@ -473,6 +516,66 @@ a:focus {
 
     .inner-btn {
         background : $art-color-accent;
+    }
+}
+
+.dl-game-button {
+    @extend %dl-button;
+    background-color: $games-color;
+
+    .inner-btn {
+        background : rgb(50, 225, 200);
+    }
+}
+
+.dl-anim {
+    @extend .dl-game-button;
+
+    .dl-icon {
+        @extend .flex;
+        position: absolute;
+        animation: hide-icon 2.5s ease; 
+        animation-fill-mode: forwards; 
+    }
+
+    .inner-btn {
+        animation: tick-dl .5s ease; 
+        animation-fill-mode: forwards; 
+        animation-delay: 2s;
+    }
+
+    &:hover {
+        transform: none;
+    }
+
+    @keyframes tick-dl {
+        100% {
+            border-bottom: solid white 0;
+            top: 0;
+        }
+    }
+
+    @keyframes hide-icon {
+        75% {
+            margin-top: $btn-size / 16;
+            opacity: 1;
+        }
+        100% {
+            margin-top: $btn-size;
+            opacity: 0;
+        }
+    }
+}
+
+a:focus {
+    %button {
+        span {
+            margin-left : $btn-size;
+        }
+
+        .inner-btn{
+            left: 0;
+        }
     }
 }
 
